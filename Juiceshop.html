@@ -1,0 +1,176 @@
+<html>
+
+<head>
+    <title>Online order!!</title>
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <script type="text/javascript" src="cart.js"></script>
+<style>
+     body {
+      background-image: url('image/pexels-johannes-plenio-1103970.jpg');
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+</style>
+</head>
+
+<body>
+
+    <h1 id="d1">Welcome to our Juice shop!!</h1>
+    <table id="menu" border="" align="center">
+        <tr><th>==========Menu========== </th></tr>
+    </table>
+    <br>
+
+    <table border="" id="alignment">
+       
+        <tr>
+            <th id="as">Juice</th>
+            <th></th>
+            <th id="as">Price($)</th>
+        </tr>
+        <tr>
+            <td>Apple juice</td>
+            <td> - </td>
+            <td>$5</td>
+        </tr>
+        <tr>
+            <td>Orange juice</td>
+            <td> - </td>
+            <td>$6</td>
+        </tr>
+        <tr>
+            <td>Banana juice</td>
+            <td> - </td>
+            <td>$3</td>
+        </tr>
+        <tr>
+            <td>Pineapple juice</td>
+            <td> - </td>
+            <td>$7</td>
+        </tr>
+        <tr>
+            <td>Strawberry juice</td>
+            <td> - </td>
+            <td>$10</td>
+        </tr>
+    </table>
+
+   <br>
+   <br>
+            <table id="data">
+            <tr><td>Enter your details below!!</td></tr>  
+            <tr>
+            <td>User name:</td>
+            <td>
+            <input type="text" name="fName" id="uName" required >
+            </td>
+            </tr>
+            <tr><td>Mobile: </td>
+            <td><input type="tel" name="mobile" required></td>
+            </tr>
+
+            </table>
+            <br>
+            <br>
+
+    <form name="online">
+        <h2 id="d2">Give yourself a boost!!</h2>
+        <h3 id="d3">Note*:-Please write the price in the below table according to above mention menu for generate the bill!!!<br>Be polite!!<br>Have a good day!!!!<br> Don't write '$' symbol while writing price in price section!!! Prices are in doller!!! </h3>
+        <table width="80%" border="" id="order">
+            <tr>
+                <th id="as">Juice</th>
+                <th> </th>
+                <th id="as">Quantity</th>
+                <th id="as">Price</th>
+            </tr>
+            <tr>
+                <td id="as1">Item 1:</td>
+                <td>
+                    <select id="item1">
+                        <option value="1">--Select item--</option>
+                        <option value="Apple Juice">Apple Juice</option>
+                        <option value="Orange Juice">Orange Juice</option>
+                        <option value="Banana Juice">Banana Juice</option>
+                        <option value="Pineapple Juice">Pineapple Juice</option>
+                        <option value="Strawberry Juice">Strawberry Juice</option>
+                    </select>
+                </td>
+                <td><input type="number" value="0" id="q1"></td>
+                <td><input type="text" id="p1"></td>
+            </tr>
+            <tr>
+                <td id="as1">Item 2:</td>
+                <td>
+                    <select id="item2">
+                        <option value="1">--Select Item--</option>
+                        <option value="Apple Juice">Apple Juice</option>
+                        <option value="Orange Juice">Orange Juice</option>
+                        <option value="Banana Juice">Banana Juice</option>
+                        <option value="Pineapple Juice">Pineapple Juice</option>
+                        <option value="Strawberry Juice">Strawberry Juice</option>
+
+                    </select>
+                </td>
+                <td><input type="number" value="0" id="q2"></td>
+                <td><input type="text" id="p2"></td>
+            </tr>
+            <tr>
+                <td id="as1">Item 3:</td>
+                <td><select id="item3">
+                        <option value="1">--Select Item--</option>
+                        <option value="Apple Juice">Apple Juice</option>
+                        <option value="Orange Juice">Orange Juice</option>
+                        <option value="Banana Juice">Banana Juice</option>
+                        <option value="Pineapple Juice">Pineapple Juice</option>
+                        <option value="Strawberry Juice">Strawberry Juice</option>
+                    </select>
+                </td>
+                <td><input type="number" value="0" id="q3"></td>
+                <td><input type="text" id="p3"></td>
+            </tr>
+            <tr>
+                <td id="as1">Item 4:</td>
+                <td><select id="item4">
+                        <option value="1">--Select Item--</option>
+                        <option value="Apple Juice">Apple Juice</option>
+                        <option value="Orange Juice">Orange Juice</option>
+                        <option value="Banana Juice">Banana Juice</option>
+                        <option value="Pineapple Juice">Pineapple Juice</option>
+                        <option value="Strawberry Juice">Strawberry Juice</option>
+
+                    </select>
+                </td>
+                <td><input type="number" value="0" id="q4"></td>
+                <td><input type="text" id="p4"></td>
+            </tr>
+
+            <tr>
+                <td id="as1">Item 5:</td>
+                <td><select id="item5">
+                        <option value="1">--Select Item--</option>
+                        <option value="Apple Juice">Apple Juice</option>
+                        <option value="Orange Juice">Orange Juice</option>
+                        <option value="Banana Juice">Banana Juice</option>
+                        <option value="Pineapple Juice">Pineapple Juice</option>
+                        <option value="Strawberry Juice">Strawberry Juice</option>
+
+                    </select>
+                </td>
+                <td><input type="number" value="0" id="q5"></td>
+                <td><input type="text" id="p5"></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><button type="submit" id="button" onclick="createBill()">Create Bill
+                </button>
+                </td>
+                <td><input type="reset" id="button" value="Clear"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
